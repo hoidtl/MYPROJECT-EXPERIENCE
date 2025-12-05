@@ -1,0 +1,174 @@
+body {
+            font-family: Arial, sans-serif;
+            background: #f5f8f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            color: #2b7a37;
+            font-weight: 700;
+            margin-bottom: 25px;
+        }
+
+        .container {
+            width: 92%;
+            max-width: 1200px;
+            margin: 40px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 14px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            overflow: hidden;
+            border-radius: 12px;
+        }
+
+        thead {
+            background: #2b7a37;
+            color: white;
+        }
+
+        th, td {
+            padding: 12px 14px;
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+        tr:hover {
+            background: #f0f7ef;
+        }
+
+        .badge {
+            padding: 6px 10px;
+            border-radius: 6px;
+            color: white;
+            font-size: 12px;
+        }
+
+        .bg-success { background: #2b7a37; }
+        .bg-danger { background: #d9534f; }
+        .bg-warning { background: #f0ad4e; color: black; }
+
+        .btn {
+            padding: 6px 12px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 13px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-info {
+            background: #28a745;
+            color: white;
+        }
+
+        .btn-primary {
+            background: #2b7a37;
+            color: white;
+        }
+
+        .btn-primary:hover,
+        .btn-info:hover {
+            opacity: 0.85;
+        }
+
+        form { display: inline; }
+        /* Ép badge không bị hover làm mờ */
+td .badge {
+    display: inline-block;
+    padding: 6px 10px;
+    border-radius: 6px !important;
+    font-size: 13px;
+    font-weight: 600;
+    color: white !important;
+}
+
+/* Màu badge chuẩn */
+.bg-danger { background-color: #e74c3c !important; }   /* đỏ đẹp */
+.bg-success { background-color: #2b7a37 !important; }  /* xanh lá */
+.bg-warning { 
+    background-color: #f0ad4e !important;
+    color: #000 !important;
+}
+
+/* Hover vào dòng không ảnh hưởng đến badge */
+tr:hover .badge {
+    background-color: inherit !important;
+    filter: none !important;
+}
+/* ================= HEADER ================= */
+.site-header {
+    background: #6fa05f;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.header-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* LOGO */
+.logo img {
+    height: 60px;
+    width: 60px;
+}
+
+/* MENU */
+.main-nav {
+    display: flex;
+    gap: 30px;
+}
+
+.main-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.main-nav a:hover {
+    text-decoration: underline;
+}
+
+/* CART ICON */
+.header-right {
+    position: relative;
+}
+
+.cart-link {
+    color: #fff;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+.cart-count {
+    position: absolute;
+    top: -6px;
+    right: -10px;
+    background: #ff4757;
+    color: #fff;
+    font-size: 12px;
+    padding: 2px 6px;
+    border-radius: 50%;
+}
+
+
+/* ================= STEPS ================= */
+.checkout-step {
+    display: flex;
+    gap: 14px;
+}

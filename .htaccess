@@ -1,0 +1,13 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    RewriteBase /websiteBanBanhKem/
+
+    # Nếu đường dẫn không phải file thật
+    RewriteCond %{REQUEST_FILENAME} !-f
+    # Và không phải thư mục thật
+    RewriteCond %{REQUEST_FILENAME} !-d
+
+    # Gửi tất cả request về index.php
+    RewriteRule ^(.*)$ index.php?url=$1 [L,QSA]
+</IfModule>
